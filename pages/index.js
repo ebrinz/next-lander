@@ -1,63 +1,51 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
+import { faGithub, faLinkedin, faFacebook, faTwitter} from '@fortawesome/free-brands-svg-icons'
+import { faCamera, faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Doo dee doo</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <div className={styles.topbar}>
+        <div className={styles.topbarContainer}>
+          <div className={styles.topbarTitle}>
+            Blog Title Here.
+          </div>
+          <div className={styles.topbarNav}>
+            <a className={styles.topbarNavItem}><FontAwesomeIcon icon={faGithub} /></a>
+            <a className={styles.topbarNavItem}><FontAwesomeIcon icon={faLinkedin} /></a>
+            <a className={styles.topbarNavItem}><FontAwesomeIcon icon={faFacebook} /></a>
+            <a className={styles.topbarNavItem}><FontAwesomeIcon icon={faTwitter} /></a>
+            <a className={styles.topbarNavItem}><FontAwesomeIcon icon={faCamera} /></a>
+            <a className={styles.topbarNavBurger}><FontAwesomeIcon icon={faBars} /></a>
+          </div>
+        </div>
+      </div>
+
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className={styles.mainContainer}>
+          <div className={styles.margin}>
+            <div className={styles.marginContainer}>test</div>
+          </div>
+          <div className={styles.content}>
+            <div className={styles.contentContainer}>test</div>
+          </div>
+          <div className={styles.margin}>
+            <div className={styles.marginContainer}>test</div>
+          </div>
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+        <a>
+          footer
         </a>
       </footer>
     </div>
