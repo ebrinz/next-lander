@@ -3,7 +3,7 @@ import Topbar from '../components/topbar.js'
 import Body from '../components/body.js'
 import styles from '../styles/Home.module.css'
 
-import params from '../data/params.json'
+import params from '../config/params.json'
 
 export default function Home({params}) {
   return (
