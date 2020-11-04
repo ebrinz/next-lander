@@ -16,7 +16,7 @@ export default function Topbar() {
             </div>
             </div>
         </div>
-        <div class="inline-flex gap-x-3 text-black invisible sm:visible">
+        <div class="inline-flex items-end gap-x-3 text-black invisible sm:visible">
             <a class="text-2xl hover:text-gray-500" href="https://www.youtube.com/watch?v=dGeEuyG_DIc">
             <FontAwesomeIcon icon={faGithub} />
             </a>
