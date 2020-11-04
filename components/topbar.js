@@ -2,36 +2,36 @@ import { faGithub, faLinkedin, faFacebook, faTwitter, faInstagram} from '@fortaw
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function Topbar() {
+export default function Topbar(props) {
   return (
     <div class="relative bg-white">
         <div class="flex justify-between items-center border-b-2 border-gray-100 shadow-md py-6 px-6">
         <div class="lg:w-0 flex-1">
             <div class="flex items-center gap-x-6">
             <a href="#" class="flex">
-                <img class="h-8 w-auto md:h-10" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Triskele-Symbol-spiral.svg" alt="Workflow"/>
+                <img class="h-8 w-auto md:h-10" src={props.icon} alt="Workflow"/>
             </a>
             <div class="font-mono text-2xl sm:text-4xl select-none">
-                Blog Name Here.
+                {props.title}
             </div>
             </div>
         </div>
         <div class="inline-flex items-end gap-x-3 text-black invisible sm:visible">
-            <a class="text-2xl hover:text-gray-500" href="https://www.youtube.com/watch?v=dGeEuyG_DIc">
+            {props.links.github.show && <a class="text-2xl hover:text-gray-500" href={props.links.github.link}>
             <FontAwesomeIcon icon={faGithub} />
-            </a>
-            <a class="text-2xl hover:text-gray-500" href="https://www.youtube.com/watch?v=dGeEuyG_DIc">
+            </a>}
+            {props.links.linkedin.show && <a class="text-2xl hover:text-gray-500" href={props.links.linkedin.link}>
             <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a class="text-2xl hover:text-gray-500" href="https://www.youtube.com/watch?v=dGeEuyG_DIc">
+            </a>}
+            {props.links.facebook.show && <a class="text-2xl hover:text-gray-500" href={props.links.facebook.link}>
             <FontAwesomeIcon icon={faFacebook} />
-            </a>
-            <a class="text-2xl hover:text-gray-500" href="https://www.youtube.com/watch?v=dGeEuyG_DIc">
+            </a>}
+            {props.links.twitter.show && <a class="text-2xl hover:text-gray-500" href={props.links.twitter.link}>
             <FontAwesomeIcon icon={faTwitter} />
-            </a>
-            <a class="text-2xl hover:text-gray-500" href="https://www.youtube.com/watch?v=dGeEuyG_DIc">
-            <FontAwesomeIcon icon={faInstagram} />
-            </a>
+            </a>}
+            {props.links.instagram.show && <a class="text-2xl hover:text-gray-500" href={props.links.instagram.link}>
+                <FontAwesomeIcon icon={faInstagram} />
+            </a>}
         </div>
         <div class="visible sm:invisible">
             <a class="">

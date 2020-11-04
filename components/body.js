@@ -4,15 +4,16 @@ export default function Body() {
   return (
     <div class="my-20 mx-8">
         <div class="grid grid-cols-5 gap-4">
-            <div class="col-start-1 col-end-2">
+            <div class="col-start-1 col-end-2 invisible sm:visible">
                 <div class="flex justify-center">
-                    <ul class="">
-                        <p>Posts</p>
-                        <li class="ml-3"><a href="default.asp">Home</a></li>
-                        <li class="ml-3"><a href="news.asp">News</a></li>
-                        <li class="ml-3"><a href="contact.asp">Contact</a></li>
-                        <p>Misc</p>
-                        <li class="ml-3"><a href="about.asp">About</a></li>
+                    <ul class="list-none leading-loose">
+                        <p class="font-bold">Tags</p>
+                        <li class="ml-3 list-inside"><a href="default.asp">Words</a></li>
+                        <li class="ml-3 list-inside"><a href="news.asp">Repos</a></li>
+                        <li class="ml-3 list-inside"><a href="contact.asp">Songs</a></li>
+                        <br/>
+                        <p class="font-bold">Misc</p>
+                        <li class="ml-3 list-inside"><a href="about.asp">About</a></li>
                     </ul>
                 </div>
             </div>
@@ -21,7 +22,7 @@ export default function Body() {
                         <Card/>
                     </div>
                 </div>
-                <div class="col-start-5 col-end-6">
+                <div class="col-start-5 col-end-6  invisible sm:visible">
             </div>
         </div>
     </div>
