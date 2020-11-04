@@ -5,8 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Topbar() {
   return (
     <div class="relative bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="flex justify-between items-center border-b-2 border-gray-100 py-6">
+        <div class="flex justify-between items-center border-b-2 border-gray-100 shadow-md py-6 px-6">
         <div class="lg:w-0 flex-1">
             <div class="flex items-center gap-x-6">
             <a href="#" class="flex">
@@ -40,7 +39,6 @@ export default function Topbar() {
             </a>
         </div>
         </div>
-    </div>
     </div>
   )
 }
