@@ -1,33 +1,20 @@
 import Head from 'next/head'
+import Topbar from '../components/topbar.js'
 import styles from '../styles/Home.module.css'
 
-import { faGithub, faLinkedin, faFacebook, faTwitter, faInstagram} from '@fortawesome/free-brands-svg-icons'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faGithub, faLinkedin, faFacebook, faTwitter, faInstagram} from '@fortawesome/free-brands-svg-icons'
+// import { faBars } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div class="">
       <Head>
-        <title>Doo dee doo</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Blog Title</title>
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/d/d5/Triskele-Symbol-spiral.svg" />
       </Head>
 
-      <div className={styles.topbar}>
-        <div className={styles.topbarContainer}>
-          <div className={styles.topbarTitle}>
-            Blog Title Here.
-          </div>
-          <div className={styles.topbarNav}>
-            <a className={styles.topbarNavItem}><FontAwesomeIcon icon={faGithub} /></a>
-            <a className={styles.topbarNavItem}><FontAwesomeIcon icon={faLinkedin} /></a>
-            <a className={styles.topbarNavItem}><FontAwesomeIcon icon={faFacebook} /></a>
-            <a className={styles.topbarNavItem}><FontAwesomeIcon icon={faTwitter} /></a>
-            <a className={styles.topbarNavItem}><FontAwesomeIcon icon={faInstagram} /></a>
-            <a className={styles.topbarNavBurger}><FontAwesomeIcon icon={faBars} /></a>
-          </div>
-        </div>
-      </div>
+      <Topbar/>
 
       <main className={styles.main}>
         <div className={styles.mainContainer}>
@@ -51,7 +38,8 @@ export default function Home() {
                     <a>2020-12-01</a>
                   </div>
                   <div className={styles.contentCardContainer}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. */}
+                  <div className="py-28 flex flex-col font-bold lg:flex-row items-center">test</div>
                   </div>
                 </div>
             </div>
@@ -62,9 +50,11 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className={styles.footer}>
+      
+
+      <div className={styles.footer}>
         <a></a>
-      </footer>
+      </div>
     </div>
   )
 }
