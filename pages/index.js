@@ -14,7 +14,7 @@ export default function Home({params}) {
       </Head>
       <Topbar icon={params.icon} title={params.title} links={params.links}/>
       <Body/>
-      <div className={styles.footer}>
+      <div class="flex py-10 justify-center items-center w-full bg-gray-100 bottom-0 absolute">
         <a></a>
       </div>
    </div>
