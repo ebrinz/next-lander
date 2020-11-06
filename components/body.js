@@ -1,6 +1,6 @@
 import Card from './card.js'
 
-export default function Body() {
+export default function Body({posts}) {
   return (
     <div class="my-20 mx-8">
         <div class="grid grid-cols-5 gap-4">
@@ -18,8 +18,10 @@ export default function Body() {
                 </div>
             </div>
                 <div class="col-start-2 col-end-5">
-                    <div class="flex justify-center">
-                        <Card/>
+                    <div class="flex-column justify-center">
+                        {posts.map((post) => (
+                           <Card post={post}/>
+                        ))}
                     </div>
                 </div>
                 <div class="col-start-5 col-end-6  invisible sm:visible">
