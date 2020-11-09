@@ -1,3 +1,5 @@
+import ReactMarkdown from 'react-markdown'
+
 export default function Card(props) {
   return (
     <div class="w-full pb-12">
@@ -7,11 +9,8 @@ export default function Card(props) {
                 <a>{props.post.title}</a>
                 <a>{props.post.date}</a>
                 </div>
-                {console.log(props.post)}
-                <div class="px-6 py-6" dangerouslySetInnerHTML={{
-                    __html: props.post.content
-                }}>
-                    {/* {props.post.content} */}
+                <div class="prose px-6 py-6">
+                    <ReactMarkdown source={props.post.content}></ReactMarkdown>
                 </div>
             </div>
         </div>
