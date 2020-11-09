@@ -18,16 +18,16 @@ export default function Topbar(props) {
         </div>
         <div class="inline-flex items-end gap-x-3 text-black invisible sm:visible">
             {props.links.github.show && <a class="text-2xl text-gray-800 hover:text-gray-500" href={props.links.github.link}>
-            <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon icon={faGithub} />
             </a>}
             {props.links.linkedin.show && <a class="text-2xl text-gray-800 hover:text-gray-500" href={props.links.linkedin.link}>
-            <FontAwesomeIcon icon={faLinkedin} />
+                <FontAwesomeIcon icon={faLinkedin} />
             </a>}
             {props.links.facebook.show && <a class="text-2xl text-gray-800 hover:text-gray-500" href={props.links.facebook.link}>
-            <FontAwesomeIcon icon={faFacebook} />
+                <FontAwesomeIcon icon={faFacebook} />
             </a>}
             {props.links.twitter.show && <a class="text-2xl text-gray-800 hover:text-gray-500" href={props.links.twitter.link}>
-            <FontAwesomeIcon icon={faTwitter} />
+                <FontAwesomeIcon icon={faTwitter} />
             </a>}
             {props.links.instagram.show && <a class="text-2xl text-gray-800 hover:text-gray-500" href={props.links.instagram.link}>
                 <FontAwesomeIcon icon={faInstagram} />
@@ -35,7 +35,7 @@ export default function Topbar(props) {
         </div>
         <div class="visible sm:invisible">
             <a class="">
-            <FontAwesomeIcon icon={faBars} />
+                <FontAwesomeIcon icon={faBars} />
             </a>
         </div>
         </div>
