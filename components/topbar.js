@@ -17,19 +17,19 @@ export default function Topbar(props) {
             </div>
         </div>
         <div class="inline-flex items-end gap-x-3 text-black invisible sm:visible">
-            {props.links.github.show && <a class="text-2xl hover:text-gray-500" href={props.links.github.link}>
+            {props.links.github.show && <a class="text-2xl text-gray-800 hover:text-gray-500" href={props.links.github.link}>
             <FontAwesomeIcon icon={faGithub} />
             </a>}
-            {props.links.linkedin.show && <a class="text-2xl hover:text-gray-500" href={props.links.linkedin.link}>
+            {props.links.linkedin.show && <a class="text-2xl text-gray-800 hover:text-gray-500" href={props.links.linkedin.link}>
             <FontAwesomeIcon icon={faLinkedin} />
             </a>}
-            {props.links.facebook.show && <a class="text-2xl hover:text-gray-500" href={props.links.facebook.link}>
+            {props.links.facebook.show && <a class="text-2xl text-gray-800 hover:text-gray-500" href={props.links.facebook.link}>
             <FontAwesomeIcon icon={faFacebook} />
             </a>}
-            {props.links.twitter.show && <a class="text-2xl hover:text-gray-500" href={props.links.twitter.link}>
+            {props.links.twitter.show && <a class="text-2xl text-gray-800 hover:text-gray-500" href={props.links.twitter.link}>
             <FontAwesomeIcon icon={faTwitter} />
             </a>}
-            {props.links.instagram.show && <a class="text-2xl hover:text-gray-500" href={props.links.instagram.link}>
+            {props.links.instagram.show && <a class="text-2xl text-gray-800 hover:text-gray-500" href={props.links.instagram.link}>
                 <FontAwesomeIcon icon={faInstagram} />
             </a>}
         </div>
