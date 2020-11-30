@@ -1,14 +1,14 @@
 import Head from 'next/head'
 import Topbar from '../components/topbar.js'
 import Body from '../components/body.js'
-import { getPosts, getTags } from '../lib/handlers.js'
+import { getTaggedPosts, getUniqueTags } from '../lib/handlers.js'
 
 // import styles from '../styles/Home.module.css'
 
-import params from '../config/params.json'
+import siteParams from '../config/params.json'
 import postIndex from '../data/index.json'
 
-export default function Home({params, tags, posts}) {
+export default function Home({siteParams, tags, posts}) {
 
   // const handleMenuClick = (e) => {
   //   tagFilter = e.target.textContent;
@@ -18,10 +18,10 @@ export default function Home({params, tags, posts}) {
   return (
     <div class="">
       <Head>
-        <title>{params.title}</title>
-        <link rel="icon" href={params.icon} />
+        <title>{siteParams.title}</title>
+        <link rel="icon" href={siteParams.icon} />
       </Head>
-      <Topbar icon={params.icon} title={params.title} links={params.links}/>
+      <Topbar icon={siteParams.icon} title={siteParams.title} links={siteParams.links}/>
       <Body tags={tags} posts={posts}/>
       <div class="flex py-10 justify-center items-center w-full bg-gray-100 absolute">
       </div>
@@ -31,17 +31,14 @@ export default function Home({params, tags, posts}) {
 
 export async function getStaticProps() {
 
-  const tags = getTags(postIndex);
-  const posts = getPosts(postIndex, tags[0]);
-
-  const tagFilter = tags[0];
+  const tags = getUniqueTags(postIndex);
+  const posts = getTaggedPosts(postIndex, tags[0]);
 
   return {
     props: {
       postIndex,
-      params,
+      siteParams,
       tags,
-      tagFilter,
       posts
     },
   }
