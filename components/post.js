@@ -4,8 +4,7 @@ export default function Post(props) {
     return (
         <div class="w-full pb-12">
             <div >
-
-                <div class="flex flex-column justify-center px-5 py-3 text-xl font-bold">
+                <div class="flex-column justify-center px-5 py-3 text-xl font-bold">
                 <a>{props.post.title}</a>
                 <a>{props.post.date}</a>
                 </div>

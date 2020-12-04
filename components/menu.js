@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 export default function Menu({tags}) {
     const router = useRouter()
     return (
-        <div class="flex justify-center">
+        <div class="flex justify-center fixed z-10">
             <ul class="list-none leading-loose cursor-default">
                 <p class="font-bold"></p>
                 {tags.map((tag) => (
