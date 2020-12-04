@@ -4,24 +4,17 @@ import Topbar from '../components/topbar.js'
 import Body from '../components/body.js'
 import { getTaggedPosts, getUniqueTags } from '../lib/handlers.js'
 // import styles from '../styles/Home.module.css'
-
+import React from 'react'
+import { useRouter } from 'next/router'
 import siteParams from '../config/params.json'
 import postIndex from '../data/index.json'
 
 export default function Tags({siteParams, tags, posts}) {
-    
-    return (
-        <div class="">
-            <Head>
-                <title>{siteParams.title}</title>
-                <link rel="icon" href={siteParams.icon} />
-            </Head>
-            <Topbar icon={siteParams.icon} title={siteParams.title} links={siteParams.links}/>
-            <Body tags={tags} posts={posts}/>
-            <div class="flex py-10 justify-center items-center w-full bg-gray-100 absolute">
-            </div>
-        </div>
-    )
+    const router = useRouter()
+    React.useEffect(() => {
+      router.push('/'+tags[0])
+      });
+    return null
 }
 
 export async function getStaticProps() {
