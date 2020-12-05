@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import React from 'react'
 import Head from 'next/head'
 import Topbar from '../components/topbar.js'
 import Body from '../components/body.js'
@@ -8,11 +9,22 @@ import { getTaggedPosts, getUniqueTags } from '../lib/handlers.js'
 import siteParams from '../config/params.json'
 import postIndex from '../data/index.json'
 
+
+
 export default function Tags({siteParams, tags, posts}) {
     const router = useRouter()
-    // React.useEffect(() => {
-    //     console.log('x', window.innerHeight)
-    //   });
+    
+    React.useEffect(() => {
+        console.log('x', window.innerHeight)
+        console.log('x', router.asPath)
+        console.log('y', window.scrollY)
+        window.addEventListener(scroll, event => {
+            console.log('p', window.scrollY)
+        })
+        if (window.scrollY == 50) {
+            router.push(router.asPath+'/?50', undefined, { shallow: true })
+        }
+      });
     
     return (
         <div class="">

@@ -1,5 +1,6 @@
+import { render } from 'react-dom'
+import React from 'react'
 import Card from './card.js'
-import Post from './post.js'
 
 export default function Content({posts}) {
     console.log('len', posts.length)
@@ -24,8 +25,5 @@ export default function Content({posts}) {
                 <Card post={post}/>
             )}
         </div>
-
     )
-    
-
 }
