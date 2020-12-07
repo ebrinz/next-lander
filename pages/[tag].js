@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import React from 'react'
 import Head from 'next/head'
 import Topbar from '../components/topbar.js'
-import Body from '../components/body.js'
+import Content from '../components/content.js'
 import { getTaggedPosts, getUniqueTags } from '../lib/handlers.js'
 // import styles from '../styles/Home.module.css'
 
@@ -15,15 +15,7 @@ export default function Tags({siteParams, tags, posts}) {
     const router = useRouter()
     
     React.useEffect(() => {
-        console.log('x', window.innerHeight)
-        console.log('x', router.asPath)
-        console.log('y', window.scrollY)
-        window.addEventListener(scroll, event => {
-            console.log('p', window.scrollY)
-        })
-        if (window.scrollY == 50) {
-            router.push(router.asPath+'/?50', undefined, { shallow: true })
-        }
+
       });
     
     return (
@@ -33,9 +25,9 @@ export default function Tags({siteParams, tags, posts}) {
                 <link rel="icon" href={siteParams.icon} />
             </Head>
             <Topbar icon={siteParams.icon} title={siteParams.title} links={siteParams.links}/>
-            <Body tags={tags} posts={posts}/>
-            <div class="flex justify-center items-center w-full bg-gray-100 absolute">
-            </div>
+            <Content tags={tags} posts={posts}/>
+            {/* <div class="flex justify-center items-center w-full bg-gray-100 absolute">
+            </div> */}
         </div>
     )
 }

@@ -5,6 +5,36 @@
 /* Start purging... */
 @tailwind components;
 /* Stop purging. */
+@font-face {
+    font-family: "Chancelaresca";
+    font-weight: 200;
+    src: local("Chancelaresca"), url(/fonts/chancelaresca-font/ChancelarescaPw-A4Dm.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Northumbria";
+    font-weight: 200;
+    src: local("Northumbria"), url(/fonts/dk-northumbria-font/Dknorthumbria-vyBA.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Elegant";
+    font-weight: 200;
+    src: local("Elegant"), url(/fonts/elegant-typewriter-font/ElegantTypewriter-v7gZ.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Etboemierex";
+    font-weight: 200;
+    src: local("Etboemierex"), url(/fonts/etboemierex-font/Etboemierex-reMx.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Wilsonwells";
+    font-weight: 200;
+    src: local("Wilsonwells"), url(/fonts/wilson-wells-font/WilsonWells-8M4jg.ttf) format("truetype");
+}
+
 
 /* Write you own custom component styles here */
 
@@ -12,4 +42,4 @@
 @tailwind utilities;
 /* Stop purging. */
 
-/* Your own custom utilities */
+

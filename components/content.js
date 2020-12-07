@@ -1,29 +1,24 @@
-import { render } from 'react-dom'
-import React from 'react'
 import Card from './card.js'
+import Menu from './menu.js'
 
-export default function Content({posts}) {
-    console.log('len', posts.length)
-    // if (posts.length > 1) {
-    //     return (
-    //         <div class="flex-column justify-center">
-    //             {posts.map(post => 
-    //                 <Card post={post}/>
-    //             )}
-    //         </div>
-    //     )
-    // } else {
-    //     return (
-    //         <div class="flex-column justify-center">
-    //             <Post post={posts[0]}/>
-    //         </div> 
-    //     )
-    // }
+export default function Content({posts, tags}) {
+
     return (
-        <div class="flex-column justify-center">
-            {posts.map(post => 
-                <Card post={post}/>
-            )}
+        <div class="my-20 px-5 py-5 md:py-20 font-mono">
+            <div class="grid grid-cols-5 gap-4">
+                <div class="col-start-1 col-end-2 invisible md:visible">
+                    <Menu tags={tags}/>
+                </div>
+                <div class="col-start-1 col-end-6 md:col-start-2 md:col-end-5">
+                    <div class="flex-column justify-center">
+                        {posts.map(post => 
+                            <Card post={post}/>
+                        )}
+                    </div>
+                </div>
+                <div class="col-start-5 col-end-6 invisible md:visible">
+                </div>
+            </div>
         </div>
     )
 }

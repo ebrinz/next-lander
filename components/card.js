@@ -4,12 +4,12 @@ export default function Card(props) {
     return (
         <div class="w-full pb-12">
             <div >
-                <div class="transition duration-500 ease-in-out shadow-lg hover:shadow-2xl rounded">
-                    <div class="flex flex-row justify-between px-5 py-3 bg-gray-500 text-xl font-bold">
-                    <a>{props.post.title}</a>
-                    <a>{props.post.date}</a>
+                <div class="transition duration-500 ease-in-out shadow-card hover:shadow-cardhvr rounded ring-1 ring-cardbrd ring-offset-0 ring-offset-cardRingColor">
+                    <div class="flex flex-row justify-between px-5 py-3 bg-cardbg border-b-1 border-cardbrd text-xl ">
+                        <a class="text-cardtxt text-sm md:text-md lg:text-lg">{props.post.title}</a>
+                        <a class="text-cardtxt text-xs md:text-sm lg:text-md">{props.post.date}</a>
                     </div>
-                    <div class="prose px-6 py-6">
+                    <div class="prose px-6 py-6 text-xs md:text-sm lg:text-md">
                         <ReactMarkdown source={props.post.content}></ReactMarkdown>
                     </div>
                 </div>
