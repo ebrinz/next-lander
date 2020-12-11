@@ -73,11 +73,11 @@ module.exports = {
       backgroundColor: ['hover', 'after', 'hover_after'],
       borderRadius: ['hover', 'after', 'hover_after'],
       transitionProperty: ['hover', 'after', 'hover_after'],
-
     }
   },
   plugins: [
     require('tailwindcss-pseudo-elements'),
+    require('@tailwindcss/typography'),
     // plugin(function ({ addUtilities }) {
     //   addUtilities(
     //     {
@@ -88,7 +88,6 @@ module.exports = {
     //     ['after']
     //   )
     // }),
-    require('@tailwindcss/typography'),
   //   plugin(function({ addUtilities }) {
   //     const newUtilities = {
   //       '.skew-10deg': {
