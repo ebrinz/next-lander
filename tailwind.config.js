@@ -1,5 +1,6 @@
 const vars = require( './config/params.json')
 const defaultTheme = require('tailwindcss/defaultTheme')
+const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   purge: ['./components/**/*.js', './pages/**/*.js'],
@@ -43,9 +44,63 @@ module.exports = {
         card: '0 20px ' + vars.colors.cardShadowSize + 'px -5px ' + vars.colors.cardShadowColor,
         cardhvr: '0 20px ' + vars.colors.cardShadowHoverSize + 'px -5px ' + vars.colors.cardShadowHoverColor
       },
+      transitionProperty: {
+        none: 'none',
+        all: 'all',
+        default: 'background-color, border-color, color, opacity, transform',
+        colors: 'background-color, border-color, color',
+        height: 'height',
+        width: 'width',
+        opacity: 'opacity',
+        transform: 'transform',
+        '75': '75ms',
+        '100': '100ms',
+        '150': '150ms',
+        '200': '200ms',
+        '300': '300ms',
+        '500': '500ms',
+        '700': '700ms',
+        '1000': '1000ms',
+        '2000': '2000ms',
+       }
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  variants: {
+    extend: {
+      width: ['hover', 'after', 'hover_after'],
+      height: ['hover', 'after', 'hover_after'],
+      display: ['hover', 'after', 'hover_after'],
+      backgroundColor: ['hover', 'after', 'hover_after'],
+      borderRadius: ['hover', 'after', 'hover_after'],
+      transitionProperty: ['hover', 'after', 'hover_after'],
+
+    }
+  },
+  plugins: [
+    require('tailwindcss-pseudo-elements'),
+    // plugin(function ({ addUtilities }) {
+    //   addUtilities(
+    //     {
+    //       '.empty-content': {
+    //         content: "''",
+    //       },
+    //     },
+    //     ['after']
+    //   )
+    // }),
+    require('@tailwindcss/typography'),
+  //   plugin(function({ addUtilities }) {
+  //     const newUtilities = {
+  //       '.skew-10deg': {
+  //         transform: 'skewY(-10deg)',
+  //       },
+  //       '.skew-15deg': {
+  //         transform: 'skewY(-15deg)',
+  //       },
+  //     }
+  //     addUtilities(newUtilities)
+  //   })
+  ],
   corePlugins: {
     preflight: false,
   },

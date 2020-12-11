@@ -9,7 +9,7 @@ export default function Card(props) {
                         <a class="text-cardtxt text-sm md:text-md lg:text-lg">{props.post.title}</a>
                         <a class="text-cardtxt text-xs md:text-sm lg:text-md">{props.post.date}</a>
                     </div>
-                    <div class="prose px-6 py-6 text-xs md:text-sm lg:text-md">
+                    <div class="prose prose-sm px-6 py-6">
                         <ReactMarkdown source={props.post.content}></ReactMarkdown>
                     </div>
                 </div>
