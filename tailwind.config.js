@@ -5,9 +5,6 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
   purge: ['./components/**/*.js', './pages/**/*.js'],
   theme: {
-    // fontFamily: {
-    //   sans: [ ...defaultTheme.fontFamily.sans],
-    //  },
     extend: {
       fontFamily: {
         "title": ["Northumbria"],
@@ -62,6 +59,9 @@ module.exports = {
         '700': '700ms',
         '1000': '1000ms',
         '2000': '2000ms',
+       },
+       transitionDuration: {
+        '2000': '2000ms',
        }
     },
   },
@@ -73,6 +73,7 @@ module.exports = {
       backgroundColor: ['hover', 'after', 'hover_after'],
       borderRadius: ['hover', 'after', 'hover_after'],
       transitionProperty: ['hover', 'after', 'hover_after'],
+      transitionDuration: ['hover', 'after', 'hover_after']
     }
   },
   plugins: [

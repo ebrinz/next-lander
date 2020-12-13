@@ -24,7 +24,7 @@ export default function Tags({siteParams, tags, posts}) {
                 <title>{siteParams.title}</title>
                 <link rel="icon" href={siteParams.icon} />
             </Head>
-            <Topbar icon={siteParams.icon} title={siteParams.title} links={siteParams.links}/>
+            <Topbar tags={tags} icon={siteParams.icon} title={siteParams.title} links={siteParams.links}/>
             <Content tags={tags} posts={posts}/>
             {/* <div class="flex justify-center items-center w-full bg-gray-100 absolute">
             </div> */}
