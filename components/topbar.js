@@ -39,7 +39,7 @@ export default function Topbar(props) {
             </div>
 
             <div class="px-6 visible md:invisible h-auto md:h-0">
-                <Menu tags={props.tags} flex={'flex flex-row flex-wrap items-center justify-centerf font-mono text-sm'}/>
+                <Menu tags={props.tags} flex={'flex flex-row flex-wrap items-center justify-center font-mono text-sm'}/>
             </div>
 
         </div>

@@ -62,6 +62,7 @@ module.exports = {
       width: ['hover', 'after', 'hover_after'],
       height: ['hover', 'after', 'hover_after'],
       display: ['hover', 'after', 'hover_after'],
+      position: ['hover', 'after', 'hover_after'],
       backgroundColor: ['hover', 'after', 'hover_after'],
       borderRadius: ['hover', 'after', 'hover_after'],
       transitionProperty: ['hover', 'after', 'hover_after'],
