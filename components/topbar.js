@@ -8,6 +8,7 @@ export default function Topbar(props) {
     return (
 
         <div class="flex flex-col fixed w-full shadow-toptitle ring-1 ring-titlebrd left-0 top-0 bg-toptitlebg">
+
             <div class="flex justify-between items-center pt-6 pb-0 md:pb-4 px-6">
                 <div class="lg:w-0 flex-1">
                     <div class="flex items-bottom gap-x-6">
