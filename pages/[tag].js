@@ -1,14 +1,11 @@
-import { useRouter } from 'next/router'
 import React from 'react'
+import { useRouter } from 'next/router'
 import Head from 'next/head'
 import Topbar from '../components/topbar.js'
 import Content from '../components/content.js'
 import { getTaggedPosts, getUniqueTags } from '../lib/handlers.js'
-// import styles from '../styles/Home.module.css'
-
 import siteParams from '../config/params.json'
 import postIndex from '../data/index.json'
-
 
 
 export default function Tags({siteParams, tags, posts}) {
@@ -19,7 +16,7 @@ export default function Tags({siteParams, tags, posts}) {
       });
     
     return (
-        <div class="">
+        <div key="0">
             <Head>
                 <title>{siteParams.title}</title>
                 <link rel="icon" href={siteParams.icon} />
@@ -55,6 +52,6 @@ export async function getStaticPaths() {
                 },
             }
         }),
-        fallback: true,
+        fallback: false,
     }
 }
