@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "index-files": "node lib/fileIndex.js",
     "build": "next build",
     "start": "next start"
   },

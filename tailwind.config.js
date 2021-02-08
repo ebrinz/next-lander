@@ -72,27 +72,15 @@ module.exports = {
   plugins: [
     require('tailwindcss-pseudo-elements'),
     require('@tailwindcss/typography'),
-    // plugin(function ({ addUtilities }) {
-    //   addUtilities(
-    //     {
-    //       '.empty-content': {
-    //         content: "''",
-    //       },
-    //     },
-    //     ['after']
-    //   )
-    // }),
-  //   plugin(function({ addUtilities }) {
-  //     const newUtilities = {
-  //       '.skew-10deg': {
-  //         transform: 'skewY(-10deg)',
-  //       },
-  //       '.skew-15deg': {
-  //         transform: 'skewY(-15deg)',
-  //       },
-  //     }
-  //     addUtilities(newUtilities)
-  //   })
+    plugin(function({ addComponents }) {
+      addComponents({
+            '@font-face': {
+              'font-family': 'Northumbria',
+              'font-weight': '200',
+              'src': 'url(/fonts/dk-northumbria-font/Dknorthumbria-vyBA.otf)'
+            }
+      })
+    })
   ],
   corePlugins: {
     preflight: false,

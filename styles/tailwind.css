@@ -2,10 +2,4 @@
 
 @tailwind components;
 
-@font-face {
-    font-family: "Northumbria";
-    font-weight: 200;
-    src: local("Northumbria"), url(/fonts/dk-northumbria-font/Dknorthumbria-vyBA.otf) format("opentype");
-}
-
 @tailwind utilities;
