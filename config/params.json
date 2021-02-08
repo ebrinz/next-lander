@@ -4,15 +4,13 @@
 
     "icon": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Triskele-Symbol-spiral.svg",
 
-    "links": {
-
-        "github": {"show": true, "link": "https://github.com/ebrinz/next-lander"},
-        "linkedin": {"show": true, "link": "https://www.linkedin.com/in/williamhgates/"},
-        "facebook": {"show": false, "link": "https://www.facebook.com/BillGates/"},
-        "twitter": {"show": true, "link": "https://twitter.com/BillGates?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"},
-        "instagram": {"show": false, "link": "https://www.instagram.com/thisisbillgates/?hl=en"}
-
-    },
+    "links": [
+        {"icon": "github", "url": "https://github.com/ebrinz/next-lander"},
+        {"icon": "linkedin", "url": "https://www.linkedin.com/in/williamhgates/"},
+        {"icon": "facebook", "url": "https://www.facebook.com/BillGates/"},
+        {"icon": "twitter", "url": "https://twitter.com/BillGates?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"},
+        {"icon": "instagram", "url": "https://www.instagram.com/thisisbillgates/?hl=en"}
+    ],
 
     "colors": {
 

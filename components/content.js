@@ -13,8 +13,8 @@ export default function Content({posts, tags}) {
                 </div>
                 <div class="col-start-1 col-end-6 md:col-start-2 md:col-end-5">
                     <div class="flex-column justify-center">
-                        {posts.map(post => 
-                            <Card post={post}/>
+                        {posts.map((post, index) => 
+                            <Card key={index} post={post}/>
                         )}
                     </div>
                 </div>
