@@ -3,12 +3,11 @@
 This blog template is meant for an easy set-up blog for using markdown files to make posts.
 Each file should have metadata at the top like the following.
 
-`
-title: First post
-description: The first post is the least memorable.
-updatedAt: '2020-04-16'
-tag: songs
-`
+`title: First post`
+`description: The first post is the least memorable.`
+`updatedAt: '2020-04-16'`
+`tag: songs`
+
 See the example .md files in /data
 
 Title will be the title of your post.
