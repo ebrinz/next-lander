@@ -9,6 +9,7 @@ description: The first post is the least memorable.
 updatedAt: '2020-04-16'
 tag: songs
 `
+See the example .md files in /data
 
 Title will be the title of your post.
 Description isn't used yet.
