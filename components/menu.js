@@ -14,7 +14,7 @@ export default function Menu({tags, flex}) {
                     hover:after:w-full hover:after:bg-gray-300 
                     after:transition-width after:duration-1000 after:ease-in">
                         <div class="flex justify-center">
-                            <div onClick={() => router.push(`/${encodeURIComponent(tag)}`)}>{tag}</div>
+                            <div class="cursor-default" onClick={() => router.push(`/${encodeURIComponent(tag)}`)}>{tag}</div>
                         </div>
                     </div>
                 </div>
@@ -25,7 +25,7 @@ export default function Menu({tags, flex}) {
                     hover:after:w-full hover:after:bg-gray-300
                     after:transition-width after:duration-1000 after:ease-in">
                         <div class="flex justify-center">
-                            <div onClick={() => router.push(`/${encodeURIComponent(tag)}`)}>{tag}</div>
+                            <div class="cursor-default" onClick={() => router.push(`/${encodeURIComponent(tag)}`)}>{tag}</div>
                         </div>
                     </div>
                 </div>
