@@ -3,18 +3,15 @@ import { useRouter } from 'next/router'
 import Head from 'next/head'
 import Topbar from '../components/topbar.js'
 import Content from '../components/content.js'
-import { getTaggedPosts, getUniqueTags } from '../lib/handlers.js'
+import { getTaggedPosts, getUniqueTags, readMetaData } from '../lib/handlers.js'
 import siteParams from '../config/params.json'
-import postIndex from '../data/index.json'
 
 
 export default function Tags({siteParams, tags, posts}) {
     const router = useRouter()
-    
     React.useEffect(() => {
 
       });
-    
     return (
         <div key="0">
             <Head>
@@ -30,6 +27,7 @@ export default function Tags({siteParams, tags, posts}) {
 }
 
 export async function getStaticProps({params}) {
+    const postIndex = readMetaData();
     const tags = getUniqueTags(postIndex);
     const posts = getTaggedPosts(postIndex, params.tag);
     return {
@@ -43,6 +41,7 @@ export async function getStaticProps({params}) {
 }
 
 export async function getStaticPaths() {
+    const postIndex = readMetaData();
     const tags = getUniqueTags(postIndex);
     return {
         paths: tags.map((tag) => {
