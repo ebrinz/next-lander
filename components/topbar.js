@@ -1,14 +1,10 @@
 import Menu from './menu.js'
-import { faGithub, faLinkedin, faFacebook, faTwitter, faInstagram} from '@fortawesome/free-brands-svg-icons'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+
 export default function Topbar(props) {
-  
     return (
-
         <div class="flex flex-col fixed w-full shadow-toptitle ring-1 ring-titlebrd left-0 top-0 bg-toptitlebg">
-
             <div class="flex justify-between items-center pt-6 pb-0 md:pb-4 px-6">
                 <div class="lg:w-0 flex-1">
                     <div class="flex items-bottom gap-x-6">
@@ -21,28 +17,16 @@ export default function Topbar(props) {
                     </div>
                 </div>
                 <div class="inline-flex items-center gap-x-5 text-black">
-                    {props.links.github.show && <a class="text-xl md:text-2xl lg:text-3xl text-gray-800 hover:text-gray-500" href={props.links.github.link}>
-                        <FontAwesomeIcon icon={faGithub} />
-                    </a>}
-                    {props.links.linkedin.show && <a class="text-xl md:text-2xl lg:text-3xl text-gray-800 hover:text-gray-500" href={props.links.linkedin.link}>
-                        <FontAwesomeIcon icon={faLinkedin} />
-                    </a>}
-                    {props.links.facebook.show && <a class="text-xl md:text-2xl lg:text-3xl text-gray-800 hover:text-gray-500" href={props.links.facebook.link}>
-                        <FontAwesomeIcon icon={faFacebook} />
-                    </a>}
-                    {props.links.twitter.show && <a class="text-xl md:text-2xl lg:text-3xl text-gray-800 hover:text-gray-500" href={props.links.twitter.link}>
-                        <FontAwesomeIcon icon={faTwitter} />
-                    </a>}
-                    {props.links.instagram.show && <a class="text-xl md:text-2xl lg:text-3xl text-gray-800 hover:text-gray-500" href={props.links.instagram.link}>
-                        <FontAwesomeIcon icon={faInstagram} />
-                    </a>}
+                    {props.links.map((link, index) => 
+                        <a key={index} class="text-xl md:text-2xl lg:text-3xl text-gray-800 hover:text-gray-500" href={link.url}>
+                         <FontAwesomeIcon icon={['fab', link.icon]} />
+                        </a>
+                    )}
                 </div>
             </div>
-
             <div class="px-6 visible md:invisible h-auto md:h-0">
                 <Menu tags={props.tags} flex={'flex flex-row flex-wrap items-center justify-center font-mono text-sm'}/>
             </div>
-
         </div>
     )
 }
