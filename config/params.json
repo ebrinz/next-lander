@@ -2,6 +2,8 @@
 
     "title": "Blog Title",
 
+    "titleFont": "/fonts/Edo/edo.ttf",
+
     "icon": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Triskele-Symbol-spiral.svg",
 
     "links": [

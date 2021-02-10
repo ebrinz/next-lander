@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "title": ["Northumbria"],
+        "title": ["Title"],
         "body": ["Elegant"]
        },
       colors: {
@@ -75,9 +75,9 @@ module.exports = {
     plugin(function({ addComponents }) {
       addComponents({
             '@font-face': {
-              'font-family': 'Northumbria',
+              'font-family': 'Title',
               'font-weight': '200',
-              'src': 'url(/fonts/dk-northumbria-font/Dknorthumbria-vyBA.otf)'
+              'src': `url(${vars.titleFont})`
             }
       })
     })
