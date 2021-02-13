@@ -4,7 +4,9 @@
 
     "titleFont": "/fonts/Edo/edo.ttf",
 
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Triskele-Symbol-spiral.svg",
+    "icon": "../public/celtic-spiral.svg",
+    "iconHeight": "60",
+    "iconWidth": "60",
 
     "links": [
         {"icon": "github", "url": "https://github.com/ebrinz/next-lander"},
@@ -21,8 +23,11 @@
         "topbarRingColor": "#310645",
         "topbarShadowColor": "#0000001C",
         "topbarShadowSize": "25",
-
+        
+        "menuSVGColor": "#211a3d",
         "menuTitleColor": "#211a3d",
+        "menuLinkIconColor": "#211a3d",
+        "menuLinkIconRolloverColor": "#222222",
 
         "bodyBackgroundColor": "#ffffff",
 

@@ -1,6 +1,6 @@
 import Menu from './menu.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import Star from '../public/celtic-spiral.svg'
 
 export default function Topbar(props) {
     return (
@@ -8,10 +8,10 @@ export default function Topbar(props) {
             <div class="flex justify-between items-center pt-6 pb-0 md:pb-4 px-6">
                 <div class="lg:w-0 flex-1">
                     <div class="flex items-bottom gap-x-6">
-                        <a href="#" class="flex items-center">
-                            <img class="h-8 w-auto md:h-10" src={props.icon} alt="Workflow"/>
-                        </a>
-                        <div class="text-9xl md:text-4xl font-title text-toptitle select-none pt-2">
+                        <div class="fill-current text-toptitle" >
+                            <Star height={50} width={50}/>
+                        </div>
+                        <div class="text-4xl lg:text-6xl font-title text-toptitle select-none pt-2">
                             {props.title}
                         </div>
                     </div>
@@ -19,8 +19,8 @@ export default function Topbar(props) {
                 <div class="inline-flex items-center gap-x-5 text-black">
                     {props.links.map((link, index) => 
                         <a key={index} class="text-xl md:text-2xl lg:text-3xl text-gray-800 hover:text-gray-500" href={link.url}>
-                        <FontAwesomeIcon icon={['fab', link.icon]} />
-                    </a>
+                            <FontAwesomeIcon icon={['fab', link.icon]} />
+                        </a>
                     )}
                 </div>
             </div>

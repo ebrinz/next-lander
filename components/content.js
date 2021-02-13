@@ -2,7 +2,6 @@ import Card from './card.js'
 import Menu from './menu.js'
 
 export default function Content({posts, tags}) {
-
     return (
         <div class="my-20 px-10 py-20 md:py-20 font-mono">
             <div class="grid grid-cols-5 gap-4">

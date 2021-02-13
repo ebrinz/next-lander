@@ -24,6 +24,7 @@
     "react-markdown": "^5.0.3"
   },
   "devDependencies": {
+    "@svgr/webpack": "^5.5.0",
     "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^2.0.1",
     "tailwindcss-pseudo-elements": "^1.5.1"

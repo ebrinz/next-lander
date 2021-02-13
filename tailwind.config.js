@@ -12,6 +12,8 @@ module.exports = {
        },
       colors: {
         toptitle: vars.colors.topbarTitleColor,
+        toplink: vars.colors.menuLinkIconColor,
+        toplinkRO: vars.colors.menuLinkIconRolloverColor,
         toptitlebg: vars.colors.topbarBackgroundColor,
         titlebrd: vars.colors.topbarRingColor,
         bodybg: vars.colors.topbarRingColorbodyBackgroundColor,
@@ -19,7 +21,11 @@ module.exports = {
         cardbg: vars.colors.cardBackgroundColor,
         cardtxt: vars.colors.cardTitleColor,
         cardbrd: vars.colors.cardRingColor
+        
+
+
       },
+
       spacing: {
         28: '7rem',
       },
