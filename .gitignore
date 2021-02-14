@@ -19,6 +19,7 @@
 .DS_Store
 *.pem
 /data/index.json
+/public/title.svg
 
 # debug
 npm-debug.log*

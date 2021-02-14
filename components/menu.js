@@ -4,14 +4,13 @@ export default function Menu({tags, flex}) {
     const router = useRouter()
     return (
         <div class={flex}>
-             {/* cursor-default text-menutxt px-6 */}
             {tags.map((tag, index) => {
                 return tag !== router.query.tag
                 ?
                 <div key={index}>
                     <div class="flex-1 py-3 px-4 content-after relative
-                    after:block after:h-0.5 after:w-0 after:bg-gray-200
-                    hover:after:w-full hover:after:bg-gray-300 
+                    after:block after:h-0.5 after:w-0 after:bg-menuUnderSt
+                    hover:after:w-full hover:after:bg-menuUnderEn 
                     after:transition-width after:duration-150 after:ease-in">
                         <div class="flex justify-center">
                             <div class="cursor-default" onClick={() => router.push(`/${encodeURIComponent(tag)}`)}>{tag}</div>
@@ -21,8 +20,8 @@ export default function Menu({tags, flex}) {
                 :
                 <div key={index}>
                     <div class="flex-1 py-3 px-4 font-bold content-after
-                    after:block after:h-0.5 after:w-0 after:bg-gray-200 after:rounded 
-                    hover:after:w-full hover:after:bg-gray-300
+                    after:block after:h-0.5 after:w-0 after:bg-menuUnderSt after:rounded 
+                    hover:after:w-full hover:after:bg-menuUnderEn
                     after:transition-width after:duration-150 after:ease-in">
                         <div class="flex justify-center">
                             <div class="cursor-default" onClick={() => router.push(`/${encodeURIComponent(tag)}`)}>{tag}</div>

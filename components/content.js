@@ -7,7 +7,7 @@ export default function Content({posts, tags}) {
             <div class="grid grid-cols-5 gap-4">
                 <div class="col-start-1 col-end-2 invisible md:visible">
                     <div class="flex justify-center align-center fixed text-md md:text-md lg:text-lg text-right">
-                        <Menu tags={tags} flex={'flex flex-col'}/>
+                        <Menu tags={tags} flex={'flex flex-col text-menutxt'}/>
                     </div>
                 </div>
                 <div class="col-start-1 col-end-6 md:col-start-2 md:col-end-5">

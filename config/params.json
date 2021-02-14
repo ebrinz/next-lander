@@ -1,12 +1,10 @@
 {
 
     "title": "Blog Title",
-
     "titleFont": "/fonts/Edo/edo.ttf",
-
-    "icon": "../public/celtic-spiral.svg",
-    "iconHeight": "60",
-    "iconWidth": "60",
+    "titleSize": "60",
+    "mobileTitleSize": "40",
+    "icon": "public/celtic-spiral.svg",
 
     "links": [
         {"icon": "github", "url": "https://github.com/ebrinz/next-lander"},
@@ -20,18 +18,24 @@
 
         "topbarBackgroundColor": "#ffffff",
         "topbarTitleColor": "#211a3d",
+        "topbarIconColor": "#211a3d",
+        
+        "topBarMenuTagColor": "#4a00c4",
+        "topbarLinkIconColor": "#211a3d",
+        "topbarLinkIconRolloverColor": "#a897c4",
+
         "topbarRingColor": "#310645",
         "topbarShadowColor": "#0000001C",
         "topbarShadowSize": "25",
-        
-        "menuSVGColor": "#211a3d",
-        "menuTitleColor": "#211a3d",
-        "menuLinkIconColor": "#211a3d",
-        "menuLinkIconRolloverColor": "#222222",
 
         "bodyBackgroundColor": "#ffffff",
 
-        "cardBackgroundColor": "#310645",
+        "menuTagColor": "#211a3d",
+        "menuTagUnderbarColorStart": "#ebc7d4",
+        "menuTagUnderbarColorEnd": "#e8236b",
+
+        "cardTopBackgroundColor": "#310645",
+        "cardBodyBackgroundColor": "#ffffff",
         "cardTitleColor": "#ffffff",
         "cardRingColor": "#310645",
         "cardShadowColor": "#00000033",

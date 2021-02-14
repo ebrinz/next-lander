@@ -12,13 +12,20 @@ module.exports = {
        },
       colors: {
         toptitle: vars.colors.topbarTitleColor,
-        toplink: vars.colors.menuLinkIconColor,
-        toplinkRO: vars.colors.menuLinkIconRolloverColor,
+        iconcolor: vars.colors.topbarIconColor,
+        toplink: vars.colors.topbarLinkIconColor,
+        toplinkRO: vars.colors.topbarLinkIconRolloverColor,
         toptitlebg: vars.colors.topbarBackgroundColor,
         titlebrd: vars.colors.topbarRingColor,
         bodybg: vars.colors.topbarRingColorbodyBackgroundColor,
-        menutxt: vars.colors.menuTitleColor,
-        cardbg: vars.colors.cardBackgroundColor,
+        topmenutxt: vars.colors.topBarMenuTagColor,
+
+        menutxt: vars.colors.menuTagColor,
+        menuUnderSt: vars.colors.menuTagUnderbarColorStart,
+        menuUnderEn: vars.colors.menuTagUnderbarColorEnd,
+        
+        cardTopbg: vars.colors.cardTopBackgroundColor,
+        cardBodybg: vars.colors.cardBodyBackgroundColor,
         cardtxt: vars.colors.cardTitleColor,
         cardbrd: vars.colors.cardRingColor
         
@@ -40,7 +47,10 @@ module.exports = {
         '6xl': '2.75rem',
         '7xl': '4.5rem',
         '8xl': '6.25rem',
-        'fit': '100vw'
+        'fit': '100vw',
+        'titleLg': vars.titleSize + 'px',
+        'titleMb': vars.mobileTitleSize + 'px'
+
       },
       boxShadow: {
         toptitle: '0 20px ' + vars.colors.topbarShadowSize + 'px 0px ' + vars.colors.topbarShadowColor,
