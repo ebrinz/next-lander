@@ -8,22 +8,22 @@ export default function Menu({tags, flex}) {
                 return tag !== router.query.tag
                 ?
                 <div key={index}>
-                    <div class="flex-1 py-3 px-4 content-after relative
-                    after:block after:h-0.5 after:w-0 after:bg-menuUnderSt
+                    <div class="group flex-1 py-3 px-4 content-after relative
+                    after:block after:h-px after:w-0 after:bg-menuUnderSt
                     hover:after:w-full hover:after:bg-menuUnderEn 
                     after:transition-width after:duration-150 after:ease-in">
-                        <div class="flex justify-center">
+                        <div class="flex justify-center group-hover:shadow-menuhvr">
                             <div class="cursor-default" onClick={() => router.push(`/${encodeURIComponent(tag)}`)}>{tag}</div>
                         </div>
                     </div>
                 </div>
                 :
                 <div key={index}>
-                    <div class="flex-1 py-3 px-4 font-bold content-after
-                    after:block after:h-0.5 after:w-0 after:bg-menuUnderSt after:rounded 
+                    <div class="group flex-1 py-3 px-4 font-bold content-after
+                    after:block after:h-px after:w-0 after:bg-menuUnderSt after:rounded
                     hover:after:w-full hover:after:bg-menuUnderEn
                     after:transition-width after:duration-150 after:ease-in">
-                        <div class="flex justify-center">
+                        <div class="flex justify-center group-hover:shadow-menuhvr">
                             <div class="cursor-default" onClick={() => router.push(`/${encodeURIComponent(tag)}`)}>{tag}</div>
                         </div>
                     </div>

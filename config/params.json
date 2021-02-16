@@ -31,8 +31,8 @@
         "bodyBackgroundColor": "#ffffff",
 
         "menuTagColor": "#211a3d",
-        "menuTagUnderbarColorStart": "#ebc7d4",
-        "menuTagUnderbarColorEnd": "#e8236b",
+        "menuTagUnderbarColorStart": "#ffffff",
+        "menuTagUnderbarColorEnd": "#211a3d",
 
         "cardTopBackgroundColor": "#310645",
         "cardBodyBackgroundColor": "#ffffff",

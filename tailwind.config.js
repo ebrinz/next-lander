@@ -55,7 +55,8 @@ module.exports = {
       boxShadow: {
         toptitle: '0 20px ' + vars.colors.topbarShadowSize + 'px 0px ' + vars.colors.topbarShadowColor,
         card: '0 20px ' + vars.colors.cardShadowSize + 'px -5px ' + vars.colors.cardShadowColor,
-        cardhvr: '0 20px ' + vars.colors.cardShadowHoverSize + 'px -5px ' + vars.colors.cardShadowHoverColor
+        cardhvr: '0 20px ' + vars.colors.cardShadowHoverSize + 'px -5px ' + vars.colors.cardShadowHoverColor,
+        menuhvr: '0px 10px 10px -10px' + vars.colors.cardShadowHoverColor
       },
       transitionProperty: {
         none: 'none',
@@ -82,7 +83,8 @@ module.exports = {
       backgroundColor: ['hover', 'after', 'hover_after'],
       borderRadius: ['hover', 'after', 'hover_after'],
       transitionProperty: ['hover', 'after', 'hover_after'],
-      transitionDuration: ['hover', 'after', 'hover_after']
+      transitionDuration: ['hover', 'after', 'hover_after'],
+      boxShadow: ['group-hover', 'hover']
     }
   },
   plugins: [
