@@ -10,7 +10,7 @@ export default function Card(props) {
                         <a class="text-cardtxt cursor-default text-xs md:text-sm lg:text-md">{props.post.date}</a>
                     </div>
                     <div class="prose prose-sm font-mono px-6 py-6 bg-cardBodybg rounded-b">
-                        <ReactMarkdown source={props.post.content}></ReactMarkdown>
+                        <ReactMarkdown escapeHtml={false} source={props.post.content}></ReactMarkdown>
                     </div>
                 </div>
             </div>
