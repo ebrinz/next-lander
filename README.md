@@ -18,7 +18,7 @@ Tag is used to organize posts into buckets. Each unique tag will make up a menu 
 
 for dev, run `npm run start dev`
 
-or for testing prod, run `npm run build && npm start`
+or for testing prod, run `npm run build && npm run start`
 
 
 Adjust values in /config/params.json to change default template values.
