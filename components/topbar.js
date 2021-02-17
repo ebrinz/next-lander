@@ -1,6 +1,6 @@
 import Menu from './menu.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Star from '../public/title.svg'
+import Logo from '../public/logo.svg'
 
 export default function Topbar(props) {
     return (
@@ -9,10 +9,10 @@ export default function Topbar(props) {
                 <div class="lg:w-0 flex-1">
                     <div class="flex items-center gap-x-6">
                         <div class="fill-current text-iconcolor block md:hidden">
-                            <Star height={parseInt(props.mbTitleSize)} width={parseInt(props.mbTitleSize)}/>
+                            <Logo height={parseInt(props.mbTitleSize)} width={parseInt(props.mbTitleSize)}/>
                         </div>
                         <div class="fill-current text-iconcolor hidden md:block">
-                            <Star height={parseInt(props.titleSize)} width={parseInt(props.titleSize)}/>
+                            <Logo height={parseInt(props.titleSize)} width={parseInt(props.titleSize)}/>
                         </div>
                         <div class="text-titleMb md:text-titleLg font-title text-toptitle select-none">
                             {props.title}

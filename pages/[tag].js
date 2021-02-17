@@ -30,7 +30,6 @@ export async function getStaticProps({params}) {
     const postIndex = readMetaData();
     const tags = getUniqueTags(postIndex);
     const posts = getTaggedPosts(postIndex, params.tag);
-    readParseSVG(siteParams.icon)
     return {
         props: {
             postIndex,

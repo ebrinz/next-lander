@@ -4,7 +4,6 @@
     "titleFont": "/fonts/Edo/edo.ttf",
     "titleSize": "60",
     "mobileTitleSize": "40",
-    "icon": "public/celtic-spiral.svg",
 
     "links": [
         {"icon": "github", "url": "https://github.com/ebrinz/next-lander"},
