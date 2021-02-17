@@ -13,12 +13,17 @@ See the example .md files in /data
 Title will be the title of your post.
 Description isn't used yet.
 UpdatedAt is used to order posts.
-Tag is used to organize posts into buckets. Each unique tag will make up a menu option for navigatin
 
+Tag is used to organize posts into buckets
+Each unique tag will make up a menu option for navigatin
 
-For dev, run `npm run start dev`
+To run:
 
-Or, for testing prod, run `npm run build && npm run start`
+Run `npm install`
+
+For dev, run `npm run start dev` and navigate to localhost:3000 in your browser
+
+Or, for testing prod, run `npm run build && npm run start` and navigate to localhost:3000 in your browser
 
 
 Adjust values in /config/params.json to change default template values
