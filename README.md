@@ -15,10 +15,8 @@ Description isn't used yet.
 UpdatedAt is used to order posts.
 Tag is used to organize posts into buckets. Each unique tag will make up a menu option for navigating.
 
-First run `npm run index-files`
-This will walk through all the markdown files and read the metadata from each file.
 
-then for dev, run `npm run start dev`
+for dev, run `npm run start dev`
 
 or for testing prod, run `npm run build && npm start`
 
