@@ -1,7 +1,7 @@
 ## Getting Started
 
-This blog template is meant for an easy set-up blog for using markdown files to make posts.
-Each file should have metadata at the top like the following.
+This blog template is meant for an easy set-up blog for using markdown files to make posts
+Each file should have metadata at the top like the following
 
 `title: First post`
 `description: The first post is the least memorable.`
@@ -13,14 +13,18 @@ See the example .md files in /data
 Title will be the title of your post.
 Description isn't used yet.
 UpdatedAt is used to order posts.
-Tag is used to organize posts into buckets. Each unique tag will make up a menu option for navigating.
+Tag is used to organize posts into buckets. Each unique tag will make up a menu option for navigatin
 
 
-for dev, run `npm run start dev`
+For dev, run `npm run start dev`
 
-or for testing prod, run `npm run build && npm run start`
+Or, for testing prod, run `npm run build && npm run start`
 
 
-Adjust values in /config/params.json to change default template values.
+Adjust values in /config/params.json to change default template values
 
-To pick icons for the links in the nav bar, use icon names from Font Awesome fab search.
+Copy a new font into the /public folder and point to it in /config/params.json
+
+To change the logo svg, copy a new svg into the /public/logo.svg file
+
+To pick icons for the links in the nav bar, use icon names from Font Awesome fab search
