@@ -32,6 +32,6 @@ Copy a new font into the /public folder and point to it in /config/params.json
 
 To change the logo svg, copy a new svg into the /public/logo.svg file
 
-Erase height and with attributes of svg tag to allow webpack to resize svg to proper dimensions
+Erase height and with attributes of svg tag in /public/logo.svg file to allow webpack to resize svg to proper dimensions
 
 To pick icons for the links in the nav bar, use icon names from Font Awesome fab search
