@@ -1,18 +1,16 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
-import Topbar from '../components/topbar.js'
-import TaggedContent from '../components/taggedContent.js'
-import { getTaggedPosts, getUniqueTags, readMetaData } from '../lib/handlers.js'
-import siteParams from '../config/params.json'
+import Topbar from '../../components/topbar.js'
+import SinglePost from '../../components/singlePost.js'
+import { getTaggedPosts, getUniqueTags, readMetaData, getPost } from '../../lib/handlers.js'
+import siteParams from '../../config/params.json'
 
 
-export default function Tags({siteParams, tags, posts}) {
+export default function Tags({siteParams, tags, post}) {
     const router = useRouter()
     React.useEffect(() => {
-
       });
-    console.log('props', posts)
     return (
         <div key="0">
             <Head>
@@ -20,7 +18,7 @@ export default function Tags({siteParams, tags, posts}) {
                 <link rel="icon" href={siteParams.icon} />
             </Head>
             <Topbar tags={tags} icon={siteParams.icon} titleSize={siteParams.titleSize} mbTitleSize={siteParams.mobileTitleSize} title={siteParams.title} links={siteParams.links}/>
-            <TaggedContent tags={tags} posts={posts}/>
+            <SinglePost tags={tags} post={post}/>
         </div>
     )
 }
@@ -28,25 +26,25 @@ export default function Tags({siteParams, tags, posts}) {
 export async function getStaticProps({params}) {
     const postIndex = readMetaData();
     const tags = getUniqueTags(postIndex);
-    const posts = getTaggedPosts(postIndex, params.tag);
+    const post = getPost(params.post);
     return {
         props: {
             postIndex,
             siteParams,
             tags,
-            posts
+            post
         },
     };
 }
 
 export async function getStaticPaths() {
     const postIndex = readMetaData();
-    const tags = getUniqueTags(postIndex);
+    const posts = getTaggedPosts(postIndex, 'allPosts');
     return {
-        paths: tags.map((tag) => {
+        paths: posts.map((post) => {
             return {
                 params: {
-                tag: tag,
+                post: post.slug,
                 },
             }
         }),
