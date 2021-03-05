@@ -17,7 +17,7 @@ module.exports = {
         toplinkRO: vars.colors.topbarLinkIconRolloverColor,
         toptitlebg: vars.colors.topbarBackgroundColor,
         titlebrd: vars.colors.topbarRingColor,
-        bodybg: vars.colors.topbarRingColorbodyBackgroundColor,
+        bodybg: vars.colors.bodyBackgroundColor,
         topmenutxt: vars.colors.topBarMenuTagColor,
 
         menutxt: vars.colors.menuTagColor,
