@@ -17,8 +17,14 @@ export default function Tags({siteParams, tags, post}) {
                 <title>{siteParams.title}</title>
                 <link rel="icon" href={siteParams.icon} />
             </Head>
-            <Topbar tags={tags} icon={siteParams.icon} titleSize={siteParams.titleSize} mbTitleSize={siteParams.mobileTitleSize} title={siteParams.title} links={siteParams.links}/>
-            <SinglePost tags={tags} post={post}/>
+            <div class="flex flex-col min-h-screen">
+                <div class="flex-grow bg-bodybg">
+                    <Topbar tags={tags} icon={siteParams.icon} titleSize={siteParams.titleSize} mbTitleSize={siteParams.mobileTitleSize} title={siteParams.title} links={siteParams.links}/>
+                    <SinglePost tags={tags} post={post}/>
+                </div>
+                <div class="bg-bodybg">
+                </div>
+            </div>
         </div>
     )
 }

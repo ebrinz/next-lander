@@ -1,5 +1,13 @@
 @tailwind base;
 
+html {
+    @apply h-full
+}
+
+body {
+    @apply h-full w-full m-0 p-0 bg-bodybg
+}
+
 @tailwind components;
 
 @tailwind utilities;

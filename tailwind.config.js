@@ -17,7 +17,7 @@ module.exports = {
         toplinkRO: vars.colors.topbarLinkIconRolloverColor,
         toptitlebg: vars.colors.topbarBackgroundColor,
         titlebrd: vars.colors.topbarRingColor,
-        bodybg: vars.colors.topbarRingColorbodyBackgroundColor,
+        bodybg: vars.colors.bodyBackgroundColor,
         topmenutxt: vars.colors.topBarMenuTagColor,
 
         menutxt: vars.colors.menuTagColor,
@@ -56,7 +56,7 @@ module.exports = {
         toptitle: '0 20px ' + vars.colors.topbarShadowSize + 'px 0px ' + vars.colors.topbarShadowColor,
         card: '0 20px ' + vars.colors.cardShadowSize + 'px -5px ' + vars.colors.cardShadowColor,
         cardhvr: '0 20px ' + vars.colors.cardShadowHoverSize + 'px -5px ' + vars.colors.cardShadowHoverColor,
-        menuhvr: '0px 10px 10px -10px' + vars.colors.cardShadowHoverColor
+        menuhvr: '0px 10px 10px -10px' + vars.colors.cardShadowColor
       },
       transitionProperty: {
         none: 'none',
