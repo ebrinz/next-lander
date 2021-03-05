@@ -15,7 +15,7 @@ export default function TaggedContent({posts, tags}) {
                 <div class="col-start-1 col-end-6 md:col-start-2 md:col-end-6 lg:col-end-5">
                     <div class="flex-column justify-center">
                         {posts.map((post, index) => 
-                            <div onClick={() => {router.push('/x/' + post.slug)}}>
+                            <div onClick={() => {router.push('/x/' + post.slug).then(() => window.scrollTo(0, 0))}}>
                                 <Card key={index} post={post}/>
                             </div>
                         )}
