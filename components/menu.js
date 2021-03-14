@@ -13,7 +13,7 @@ export default function Menu({tags, flex}) {
                     hover:after:w-full hover:after:bg-menuUnderEn 
                     after:transition-width after:duration-150 after:ease-in">
                         <div class="flex justify-center group-hover:shadow-menuhvr">
-                            <div class="cursor-default" onClick={() => router.push(`/${encodeURIComponent(tag)}`)}>{tag}</div>
+                            <div class="cursor-default" onClick={() => router.push(`/${encodeURIComponent(tag)}`).then(() => window.scrollTo(0, 0))}>{tag}</div>
                         </div>
                     </div>
                 </div>
@@ -24,7 +24,7 @@ export default function Menu({tags, flex}) {
                     hover:after:w-full hover:after:bg-menuUnderEn
                     after:transition-width after:duration-150 after:ease-in">
                         <div class="flex justify-center group-hover:shadow-menuhvr">
-                            <div class="cursor-default" onClick={() => router.push(`/${encodeURIComponent(tag)}`)}>{tag}</div>
+                            <div class="cursor-default" onClick={() => router.push(`/${encodeURIComponent(tag).then(() => window.scrollTo(0, 0))}`)}>{tag}</div>
                         </div>
                     </div>
                 </div>
