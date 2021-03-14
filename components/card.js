@@ -5,7 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Card(props) {
     const router = useRouter()
     const feedMode = router.pathname === '/[tag]' ? 1 : 0;
-    console.log(props.tag)
+    const cardHeight = feedMode ? ' max-h-80' : '';
+    const cardClass = "bg-cardBodybg text-menutxt rounded-b break-words rounded-b overflow-scroll" + cardHeight;
+    // console.log('cxxxxx', window)
     return (
         <div class="w-full pb-12">
             <div>
@@ -14,7 +16,7 @@ export default function Card(props) {
                         onClick={() => {
                             feedMode == 1 
                             ? 
-                                router.push('/x/' + props.post.slug)
+                                router.push('/x/' + props.post.slug).then(() => window.scrollTo(0, 0))
                             : 
                                 router.push('/'+ props.post.tag)
                             }
@@ -31,8 +33,12 @@ export default function Card(props) {
                             }
                         </a>
                     </div>
-                    <div class="bg-cardBodybg text-menutxt rounded-b prose-sm font-mono px-6 py-6 break-words rounded-b">
-                        <ReactMarkdown escapeHtml={false} source={props.post.content}></ReactMarkdown>
+                    <div id="123" class={cardClass}>
+                        <div class="prose-sm font-mono px-6 py-6">
+                            <ReactMarkdown escapeHtml={false} source={props.post.content}></ReactMarkdown>
+                        </div>
+                        {/* {typeof document !== 'undefined' && console.log(document.getElementById("123").offsetHeight)}
+                        { typeof window !== 'undefined' &&  console.log(window.getComputedStyle(document.getElementById("123"), null).getPropertyValue("height")) } */}
                     </div>
                 </div>
             </div>
