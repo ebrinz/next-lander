@@ -37,8 +37,6 @@ export default function Card(props) {
                         <div class="prose-sm font-mono px-6 py-6">
                             <ReactMarkdown escapeHtml={false} source={props.post.content}></ReactMarkdown>
                         </div>
-                        {/* {typeof document !== 'undefined' && console.log(document.getElementById("123").offsetHeight)}
-                        { typeof window !== 'undefined' &&  console.log(window.getComputedStyle(document.getElementById("123"), null).getPropertyValue("height")) } */}
                     </div>
                 </div>
             </div>
