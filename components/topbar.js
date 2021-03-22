@@ -19,7 +19,7 @@ export default function Topbar(props) {
                         </div>
                     </div>
                 </div>
-                <div class="inline-flex items-center gap-x-5 text-black flex-wrap pl-4">
+                <div class="inline-flex items-center space-x-2 md:space-x-5 text-black flex-wrap pl-4">
                     {props.links.map((link, index) => 
                         <a key={index} class="text-xl md:text-2xl lg:text-3xl text-toplink hover:text-toplinkRO" href={link.url}>
                             <FontAwesomeIcon icon={['fab', link.icon]} />
