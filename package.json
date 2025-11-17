@@ -2,11 +2,14 @@
   "name": "next-lander",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "netlify": "next build && next export"
+    "netlify": "next build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",

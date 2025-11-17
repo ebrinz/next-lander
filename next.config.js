@@ -1,4 +1,5 @@
 module.exports = {
+    output: 'export',
     webpack(config, { isServer }) {
         config.module.rules.push({
             test: /\.svg$/,
