@@ -35,7 +35,7 @@ export default function Card(props) {
                     </div>
                     <div id="123" class={cardClass}>
                         <div class="prose-sm font-mono px-6 py-6">
-                            <ReactMarkdown escapeHtml={false} source={props.post.content}></ReactMarkdown>
+                            <ReactMarkdown>{props.post.content}</ReactMarkdown>
                         </div>
                     </div>
                 </div>
