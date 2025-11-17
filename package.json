@@ -13,20 +13,24 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.13",
-    "@tailwindcss/typography": "^0.3.1",
-    "autoprefixer": "^10.0.4",
-    "gray-matter": "^4.0.2",
-    "next": "10.0.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "autoprefixer": "^10.4.22",
+    "glob": "^12.0.0",
+    "gray-matter": "^4.0.3",
+    "next": "^14.2.33",
     "next-fonts": "^1.5.1",
-    "postcss": "^8.1.14",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-markdown": "^5.0.3"
+    "postcss": "^8.5.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^10.1.0"
   },
   "devDependencies": {
-    "@svgr/webpack": "^5.5.0",
-    "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^2.0.1",
+    "@babel/core": "^7.28.5",
+    "@svgr/webpack": "^8.1.0",
+    "tailwindcss": "^3.4.18",
     "tailwindcss-pseudo-elements": "^1.5.1"
+  },
+  "overrides": {
+    "glob": "^12.0.0"
   }
 }
